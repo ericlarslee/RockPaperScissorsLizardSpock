@@ -1,9 +1,11 @@
 from gesture import Gesture
+from human import Human
+from computer import Computer
 
 
 class Player:
-    def __init__(self, id_input):
-        self.id = id_input
+    def __init__(self, ):
+        self.id = self
         self.gestures = []
         self.turn_choice = ''
         self.generate_gestures_list()
