@@ -11,13 +11,17 @@ def game():
           'Spock vaporizes Rock\n')
     player1 = Human()
     print(f'Welcome {player1.id}')
-    opponent = input('\nDo you want to play against a computer, or a human?')
-    if opponent == 'computer':
-        player2 = Computer()
-        print(f'Welcome {player2.id}\n')
-    else:
-        player2 = Human()
-        print(f'Welcome {player2.id}\n')
+    opponent = ''
+    while opponent != 'computer' or opponent != 'human':
+        if opponent == 'computer':
+            player2 = Computer()
+            print(f'Welcome {player2.id}\n')
+        elif opponent == 'human':
+            player2 = Human()
+            print(f'Welcome {player2.id}\n')
+        else:
+            print('try again')
+            opponent = input('\nDo you want to play against a computer, or a human?')
     games = input('How many games would you like this series to be the best of?')
     games = int(games)
     games /= 2

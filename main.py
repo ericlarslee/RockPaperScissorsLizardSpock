@@ -2,7 +2,6 @@ from game import game
 
 
 def main():
-    print('Hello')
     game()
 
 
