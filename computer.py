@@ -8,6 +8,5 @@ class Computer(Player):
         self.id = 'computer'
 
     def gesture_choice(self):
-        i = random.randint(1, len(self.gestures))
-        print(self.gestures[i])
+        i = random.randint(0, len(self.gestures) - 1)
         return self.gestures[i]
