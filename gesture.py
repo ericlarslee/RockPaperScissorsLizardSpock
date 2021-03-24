@@ -4,4 +4,3 @@ class Gesture:
         self.beats = [beats1 + beats2]
         self.loses = [loses1, loses2]
         self.ties = ties1
-
