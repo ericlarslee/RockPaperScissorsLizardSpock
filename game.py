@@ -13,6 +13,7 @@ def game():
     print(f'Welcome {player1.id}')
     opponent = ''
     while opponent != 'computer' or opponent != 'human':
+        opponent = input('\nDo you want to play against a computer, or a human?')
         if opponent == 'computer':
             player2 = Computer()
             print(f'Welcome {player2.id}\n')
@@ -23,7 +24,6 @@ def game():
             break
         else:
             print('try again')
-            opponent = input('\nDo you want to play against a computer, or a human?')
     games = input('How many games would you like this series to be the best of?')
     games = int(games)
     games /= 2
