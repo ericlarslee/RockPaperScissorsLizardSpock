@@ -16,9 +16,11 @@ def game():
         if opponent == 'computer':
             player2 = Computer()
             print(f'Welcome {player2.id}\n')
+            break
         elif opponent == 'human':
             player2 = Human()
             print(f'Welcome {player2.id}\n')
+            break
         else:
             print('try again')
             opponent = input('\nDo you want to play against a computer, or a human?')
